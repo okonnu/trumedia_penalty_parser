@@ -43,6 +43,8 @@ public class PenaltyDetail
             {
                 throw new PenaltyParsingException("#### Could not parse yards, integer conversion error: " + yardsStr);
             }
+
+
     }
 
     public PenaltyResult extractResult(String desc) {
@@ -122,7 +124,7 @@ public class PenaltyDetail
             ATL-67-D.Dalman, Offensive Holding, declined.
             ATL, Delay of Game, 5 yards, enforced at 50 - No Play.
 
-            Based on the exmple, we split on the word "yards", then split on commas, then return the first part trimmed
+            Based on the exmple, we split on the word "yards", then split on spaces, then return the last part trimmed
              */
 
         String[] parts = desc.split("yards");

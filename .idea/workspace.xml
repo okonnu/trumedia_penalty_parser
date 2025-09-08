@@ -98,7 +98,7 @@
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
       <option name="MAIN_CLASS_NAME" value="com.trumedia.nfl.App" />
       <module name="app.main" />
-      <option name="PROGRAM_PARAMETERS" value="C:\Users\okonu\Documents\trumedia\trumedia_penalty_parser\input\input-1.csv C:\Users\okonu\Documents\trumedia\trumedia_penalty_parser\output\output-1.json" />
+      <option name="PROGRAM_PARAMETERS" value="C:\Users\okonu\Documents\trumedia\trumedia_penalty_parser\input\input-2.csv C:\Users\okonu\Documents\trumedia\trumedia_penalty_parser\output\output-2.json" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.trumedia.nfl.*" />
@@ -182,7 +182,7 @@
       <option name="presentableId" value="Default" />
       <updated>1757116467306</updated>
       <workItem from="1757116469896" duration="3848000" />
-      <workItem from="1757282096169" duration="10771000" />
+      <workItem from="1757282096169" duration="13982000" />
     </task>
     <servers />
   </component>
