@@ -35,14 +35,17 @@ public class PenaltyDetail
         this.type = extractType(playDesc);
         this.player = extractPlayer(playDesc);
         String yardsStr = extractYards(playDesc);
-        if (yardsStr != null)
+        if (yardsStr != null){
             try {
                 this.yards = Integer.parseInt(yardsStr);
             }
-            catch (NumberFormatException nfe)
-            {
+            catch (NumberFormatException nfe) {
                 throw new PenaltyParsingException("#### Could not parse yards, integer conversion error: " + yardsStr);
             }
+        } else {
+            this.yards = -1; // default to -1 if not found
+        }
+
 
 
     }
@@ -136,6 +139,31 @@ public class PenaltyDetail
         }
         System.out.println("Could not extract yards from description: " + desc);
         return null;
+    }
+
+    // Getter methods for accessing penalty details
+    public PenaltyResult getResult() {
+        return result;
+    }
+
+    public String getTeam() {
+        return team;
+    }
+
+    public String getType() {
+        return type;
+    }
+
+    public String getPlayer() {
+        return player;
+    }
+
+    public Integer getYards() {
+        return yards;
+    }
+
+    public boolean hasYards() {
+        return yards > 0;
     }
 
 }
