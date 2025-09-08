@@ -7,6 +7,10 @@ bin
 
 # Ignore IDE-specific stuff
 .vscode
+.idea
+app/gradlew
+app/gradlew.bat
+add
 
 # Ignore MacOS stuff
 .DS_Store
